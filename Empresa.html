@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body id="body">
+    <div class="selector-tema">
+        <select name="" id="tema" onchange="cambiarTema()">
+            <option value="light">claro</option>
+            <option value="dark">oscuro</option>
+            <option value="crazy">loco</option>
+        </select>
+    </div>
+    <!-- imagen -->
+    <div>
+        <img class="imagen1" src="https://ams3.digitaloceanspaces.com/graffica/2022/12/unnamed-512x375.png" width="350" height="250"/>
+    </div>
+    <div>
+        <!-- titulo -->
+        <h1 class="text-shadow">MAC DONALD <i class="fa-solid fa-burger"></i></h1>
+    </div>
+    <div>
+        <!-- descripcion -->
+        <h3 class="conoce">Conoce de nosotros</h3>
+        <p>
+            Es una red de restaurantes de comida rápida alrededor del mundo especializada en la venta de hamburguesas, papas fritas y bebidas efervescentes que, además adhieren platillos según el entorno en donde se encuentre.
+        </p>
+        <!-- contactos -->
+        <h3 class="contacto"> Contactenos</h3>
+        <p>
+            <ul>
+                <li>30033422 (DF)</li>
+                <li>01 800. 300 3435</li>
+                <li>escribirnos al correo. atencionaclientes@mx.mcd.com.</li>
+            </ul>
+        </p>
+    </div>
+
+    <div>
+        <!-- lista de servicios -->
+        <h3 class="lista">Lista de servicios</h3>
+       <ul>
+        <li>hamburguesas</li>
+        <li>papas y hamburguesas</li>
+        <li>desayunos</li>
+        <li>cajita feliz</li>
+       </ul>
+    </div>
+<div>
+    <!-- video -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hEQz4SFhHuI?si=n9F13-9bAjZFBTd7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<hr>
+<div>
+    <!-- enlace -->
+    <a href="https://www.mcdonalds.com.co/productos"target="_blank">visita nuestro link</a>
+</div>
+<hr>
+<h1 class="alaia">formulario de contactos</h1>
+  <!-- formulario -->
+  <form class="formulario" action="">
+    <!-- Campo de Texto -->
+    <label for="">Nombre</label>
+    <input type="text" placeholder="Nombre" name="Nombre" required id="nombre">
+    <br>
+    <br>
+    <label for="">cedula</label>
+    <input type="number" placeholder="cedula" name="cedula" required id="cedula">
+    <br>
+    <br>
+    <label for="">Escoja la cuidad a la que pertenece</label>
+    <select name="" id="cuidad">
+        <option value="">-</option>
+        <option value="Bogota">Bogota</option>
+        <option value="Sincelejo">Sincelejo</option>
+        <option value="Manizales">Manizales</option>
+        <option value="Medellin">Medellin</option>
+        <option value="cali">cali</option>
+        <option value="Bucaramanga">Bucaramanga</option>
+    </select>
+    <br>
+    <br>
+    <label for="">Telefono</label>
+    <input type="tel" placeholder="Telefono" name="Telefono" required id="telefono">
+    <br>
+    <br>
+    <label for="">Direccion</label>
+    <input type="text" placeholder="Direccion" name="Direccion" required id="direccion">
+    <br>
+    <br>
+    <label for="">Correo Electronico</label>
+    <input type="email"required autofocus placeholder="Ingresar Email" name="Correo" id="correo">
+    <br>
+    <br>
+    <label for="">Adjunta documento</label>
+    <input type="file" name="adjunta_evidencia" id="documento">
+    <br>
+    <br>
+    <label for="">fecha de nacimiento</label>
+    <input type="month" name="fecha_nacimiento" required id="fecha">
+    <br>
+    <!-- button -->
+    <button type="button" onclick="enviarFormulario()">Enviar</button>
+</form>
+<hr>
+<h1 class="ventas">VENTAS 2023</h1>
+<br>
+<br>
+<table>
+    <tr style="background-color: rgb(223, 196, 23);">
+        <th>Enero</th>
+        <th>Febrero</th>
+        <th>Marzo</th>
+        <th>Abril</th>
+        <th>Mayo</th>
+        <th>Junio</th>
+        <th>Julio</th>
+        <th>Agosto</th>
+        <th>Septiembre</th>
+        <th>Octubre</th>
+        <th>Noviembre</th>
+        <th>Diciembre</th>
+    </tr>
+    <tr style="background-color: rgb(237, 54, 8);">
+        <td>$5.000.000</td>
+        <td>$800.000</td>
+        <td>$469.000.00</td>
+        <td>$1.000.000</td>
+        <td>$900.000</td>
+        <td>$2.000.000</td>
+        <td>$8.000.000</td>
+        <td>$500.000</td>
+        <td>$6.000.000</td>
+        <td>$4.000.000</td>
+        <td>$300.000</td>
+        <td>$9.000.000</td>
+    </tr>
+</table>
+</body>
+ <script>
+    function cambiarTema(){
+        // Elemento que va a cambiar 
+        var body = document.getElementById("body")
+        // Valor del selector de tema
+        var tema = document.getElementById("tema").value
+        var fondo = ""
+        var letra = ""
+        if(tema == "ligth"){
+            fondo = "yellow"
+            letra = "black"
+        } else if(tema == "dark"){
+            fondo = "red"
+            letra = "yellow"
+        } else if(tema == "crazy"){
+            fondo = "orange"
+            letra = "red"
+        }
+        // Modificamos el estilo de la pagina
+        body.style.backgroundColor = fondo
+        body.style.color = letra
+    }
+    function enviarFormulario(){
+        var nombre = document.getElementById("nombre").value
+        var cedula = document.getElementById("cedula").value
+        var cuidad = document.getElementById("cuidad").value
+        var telefono = document.getElementById("telefono").value
+        var direccion = document.getElementById("correo").value
+        var documento = document.getElementById("documento").value
+        var fecha = document.getElementById("fecha").value
+
+        if(nombre && cedula && cuidad && telefono && correo && documento && fecha)
+        alert("Los datos del formulario son: " + nombre + " " + cedula + " " + cuidad + " " + telefono + " " + correo + " " + documento + " " + documento + " " + fecha  )
+    }
+ </script>
+<style>
+    
+    .text-shadow {
+        color: rgb(243, 223, 10);
+            text-shadow: 4px 4px 4px #f66206;
+            font-family: 'Audiowide', sans-serif;
+            font-style: oblique;
+            font-size: 60px;
+    }
+    .imagen1 {
+        width: 30%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            box-shadow: 5px 1px 100px #e42205;
+    }
+    .conoce {
+        color: rgb(243, 223, 10);
+            text-shadow: 1px 1px 1px #f66206;
+            font-family: 'Audiowide', sans-serif;
+            font-style: oblique;
+            font-size: 20px;
+    }
+    .contacto {
+        color: rgb(243, 223, 10);
+            text-shadow: 1px 1px 1px #f66206;
+            font-family: 'Audiowide', sans-serif;
+            font-style: oblique;
+            font-size: 20px;
+    }
+    .lista {
+        color: rgb(243, 231, 10);
+            text-shadow: 1px 1px 1px #f68206;
+            font-family: 'Audiowide', sans-serif;
+            font-style: oblique;
+            font-size: 20px;
+    }
+    .formulario {
+        color: rgb(252, 6, 6);
+            text-shadow: 1px 1px 1px #f66206;
+            font-family: 'Audiowide', sans-serif;
+            font-style: oblique;
+            font-size: 15px;
+    }
+    table#estilo-tabla {
+            border: 4px solid;
+            width: 10%;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid;
+            padding: 10px;
+            border-color: rgb(211, 226, 43);
+        }
+        table#estilo-tabla tr:nth-child(event) {
+            background-color: beige;
+        }
+        table#estilo-tabla tr:hover {
+            background-color: yellow;
+            color: white;
+        }
+        table#estilo-tabla th {
+            background-color: red;
+            color: rgb(13, 231, 46);
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 20px 40px;
+            margin: 8px;
+            display: inline-block;
+            border: 1px solid #fd0606;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .alaia {
+            color: rgb(243, 223, 10);
+            text-shadow: 1px 1px 1px #f66206;
+            font-family: 'Audiowide', sans-serif;
+            font-style: oblique;
+            font-size: 20px;
+        }
+        button {
+            border-radius: 5px;
+            color: rgb(39, 12, 126);
+            background-color: rgb(227, 243, 5);
+            padding: 10px 20px;
+            width: 100%;
+            margin: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(243, 223, 10)
+        }
+        .ventas {
+            color: rgb(243, 223, 10);
+            text-shadow: 4px 4px 4px #f66206;
+            font-family: 'Audiowide', sans-serif;
+            font-style: oblique;
+            font-size: 25px;
+        }
+</style>
+ </script>
+</html>

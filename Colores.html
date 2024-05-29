@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="ejemplo1 bordes margenes">
+        Clase1
+    </div>
+    <div class="ejemplo2 bordes margenes padding">
+        clase2
+    </div>
+    <div>
+        <h1 class="text-shadow">
+            titulo <i class="fa-solid fa-burger"></i>
+        </h1>
+        <p class="alineacion-texto">
+            Los párrafos cortos son aquellos párrafos que tienen entre tres y seis líneas. Si bien existen párrafos más extensos, que pueden llegar hasta las veinte líneas, lo recomendable es que un párrafo no tenga más de cuatro o cinco oraciones.
+        </p>
+    </div>
+    <button>Hamburguesa <i class="fa-solid fa-burger"></i></button> <br>
+    <a href="http://campus.talentotechbogota.co/" class="enlace" target="_blank">telentotech</a>
+
+    <div>
+        <h1>listas</h1>
+        <ul>
+            <li>Huevos</li>
+            <li>Leche</li>
+            <li>Carne</li>
+            <li>pescado</li>
+        </ul>
+    </div>
+    <div>
+        <h1>TABLA</h1>
+        <table id="estilo-tabla">
+            <tr>
+            <th>Nombre</th>
+            <th>Cuidad</th>
+            <th>Correo</th>
+        </tr>
+        <tr>
+            <td>Camilo</td>
+            <td>Bogota</td>
+            <td>camilo@correo.com</td>
+        </tr>
+        <tr>
+            <td>Gina</td>
+            <td>medellin</td>
+            <td>gina@correo.com</td>
+        </tr>
+        <tr>
+            <td>Alaia</td>
+            <td>manizales</td>
+            <td>alaia@correo.com</td>
+        </tr>
+        </table>
+    </div>
+    <div>
+        <h1>Posicionamiento</h1>
+        <div class="relative">
+            relativo
+            <div class="absolute">
+                Absoluto
+                <div class="fixed">
+                    Fijado
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aliquid ut molestias facere minus dolores ratione vero nulla! Maxime illum facere cumque error quis aut ipsam nostrum dolorum, reiciendis eum!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>Float</h1>
+        <div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro quisquam eligendi qui voluptatum at, tempora nisi magnam reprehenderit blanditiis quod, repellat laboriosam vero officiis perferendis asperiores enim repudiandae perspiciatis corrupti!
+                <img class="float" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHf9JcVsqVK9ruBQ91PTP7y6XgEgJQ-i7PkQ&s">
+            </p>
+        </div>
+    </div>
+    <div>
+        <h1>IMAGENES</h1>
+        <img class="imagen1" src="data:image/jpeg;base64,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" alt="">
+
+        <img class="imagen2" src="https://t2.uc.ltmcdn.com/es/posts/4/9/0/cuidados_del_boxer_5094_orig.jpg" alt="">
+
+        <img class="imagen3" src="https://www.nunpet.es/blog/wp-content/uploads/2021/10/boxer1.jpg" alt="">
+    </div>
+    <div>
+        <h1 class="transiciones">transiciones</h1>
+    </div>
+    <div class="animation">
+        <h1>Animacion</h1>
+    </div>
+    <form action="">
+        <label for="">Nombre</label>
+        <input type="text" placeholder="Nombre">
+        <label for="">Descripcion</label>
+        <textarea name="" id=""></textarea>
+        <label for="">pais</label>
+        <select name="" id="">
+            <option value="">Colombia</option>
+            <option value="">Canada</option>
+            <option value="">Chile</option>
+        </select>
+        <button>Enviar</button>
+    </form>
+    <h1>Grid</h1>
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+    <style>
+        .ejemplo1 {
+            background-color: tomato;
+            color: blue;
+            border: solid;
+            border-color: aqua;
+            opacity: 0.5;
+        }
+        .ejemplo2 {
+            /* tamaño de elementos */
+            width: 80%;
+            height: 300px;
+            /* imagen de fondo */
+            background-image: url("https://www.valoraanalitik.com/wp-content/uploads/2019/11/MIN-TIC.png"); 
+            background-repeat: no-repeat;
+            background-size: unset;
+            background-attachment: scroll;    
+        }
+        .margenes {
+                /* margenes */
+            margin-left: 50px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .bordes {
+            /* Bordes */
+            border-style:dotted solid dashed double;
+            border-color: rgb(116, 81, 50);
+            border-width: 15px;
+            border-radius: 50px;
+        }
+        .padding {
+            padding-top: 50px;
+            padding-left: 30px;
+            padding-right: 50px;
+        }
+        .alineacion-texto {
+            text-align: center;
+            text-align-last: right;
+            text-decoration-line: underline;
+            text-decoration-color: blue;
+            text-decoration-style: dotted;
+            text-decoration-thickness: 5px;
+
+            text-transform: capitalize;
+            text-indent: 50px;
+            letter-spacing: 2px;
+            line-height: 2;
+            word-spacing: 10px;
+
+            font-weight: bold;
+        }
+        .text-shadow {
+            color: brown;
+            text-shadow: 2px 2px 5px #06f632;
+            font-family: 'Audiowide', sans-serif;
+            font-style: oblique;
+            font-size: 60px;
+        }
+        .enlace {
+            text-decoration: none;
+            background-color: rgb(235, 17, 159);
+            padding: 5px;
+            border-radius: 5px;
+            border-color: rgb(62, 9, 253);
+            border-style: solid;
+            display: inline-block;
+            text-align: center;
+            cursor: progress;
+        }
+        .enlace:hover {
+            color: #2fe40b;
+            text-decoration: none;
+        }
+        .enlace:active {
+            color: rgb(232, 13, 13);
+        }
+        ul>li {
+            list-style-type: square;
+            background-color: #2fe40b;
+            display: inline;
+        }
+        ul {
+            background-color: blue;
+            opacity: 0.6;
+            padding: 20px;
+        }
+        /* estilo de la tabla */
+        table#estilo-tabla {
+            border: 4px solid;
+            width: 70%;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid;
+            padding: 10px;
+            border-color: blueviolet;
+        }
+        table#estilo-tabla tr:nth-child(event) {
+            background-color: beige;
+        }
+        table#estilo-tabla tr:hover {
+            background-color: yellow;
+            color: white;
+        }
+        table#estilo-tabla th {
+            background-color: red;
+            color: rgb(13, 231, 46);
+        }
+
+        /* Se adapta a la posicion del padre */
+        .relative {
+            border: 4px solid #7906fd;
+            width: 400px;
+            height: 200px;
+            position: relative;
+        /* Se adapta a la posicion Fija */
+        }
+        .absolute {
+            border: 4px solid #06f632;
+            width: 200px;
+            height: 100px;
+            right: 0;
+            top: 80px;
+            position: absolute;
+            /* Alineacion */
+            text-align: right;
+        }
+        .fixed {
+            border: 3px solid #f38e22b2;
+            width: 100px;
+            height: 50px;
+            left: 0;
+            top: 200px;
+            position: fixed;
+            background-color: bisque;
+            /* desbordamiento */
+            overflow: auto;
+        }
+        .float {
+            width: 100px;
+            height: 150px;
+            float: right;
+        }
+        /* pseudoElementos */
+        h1::first-letter {
+            color: #7906fd;
+            background-color: #f5c311b2;
+            font-size: 60px;
+        }
+        .imagen1 {
+            width: 30%;
+            border-radius: 100px;
+            border: 2px solid red;
+            padding: 10px;
+            outline-color: #9cf113;
+            outline-style: solid;
+        }
+        .imagen2 {
+            width: 30%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            box-shadow: 5px 1px 100px #7906fd;
+        }
+        .imagen3 {
+            width: 60%;
+            display: block;
+            margin-top: 50px;
+
+            filter: blur(4px);
+            filter: brightness(250%);
+            filter: contrast(180%);
+            filter: grayscale(80%);
+            filter: hue-rotate(180deg);
+            filter: invert(60%);
+            filter: saturate(5);
+            filter: sepia(50%);
+            filter: opacity(50%);
+        }
+        .transiciones {
+            background-color: #7906fd;
+            width: 20%;
+            height: 100px;
+            transition: width 2s, transform 2s;
+            transition-timing-function: linear;
+            transition-timing-function: ease;
+            transition-timing-function: ease-in;
+            transition-timing-function: ease-out;
+            transition-delay: 0.5s;
+        }
+
+        .transiciones:hover {
+            width: 30%;
+            transform: translate(120px, 50%);
+            transform: scale(0.5) translate(-100%, -100%);
+            transform: rotate(90deg);
+            
+        }
+        .animation {
+            width: 30%;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            /* animation-name: ejemplo; */
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes ejemplo {
+            0% {border-radius: 5px; background-color: red; left: 0; top: 0}
+            25% {border-radius: 20px; background-color: yellow; left: 200px; top: 0}
+            50% {border-radius: 50px;background-color: blue; left: 200px; top: 200px}
+            75% {border-radius: 50px;background-color: green; left: 0; top: 200px}
+            100%{border-radius: 5px;background-color: red; left: 0; top: 100px}
+            
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px 20px;
+            margin: 8px;
+            display: inline-block;
+            border: 1px solid #7906fd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(17, 235, 64);
+            padding: 10px 20px;
+            width: 100%;
+            margin: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+
+        label {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            background-color: yellowgreen;
+            padding: 10px;
+        }
+
+        .grid > div {
+            background-color: #9ad5a5;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        /* medaqueries para diseño responsive */
+        @media screen and (max-width: 600px) {
+            button {
+                width: 200px;
+                background-color: rgb(235, 17, 159);
+            }
+            
+        }
+
+        @media screen and (min-width: 600px) {
+            button {
+                width: 50%;
+                background-color: #5717ecb2;
+            }
+        }
+    </style>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table style="background-color: yellowgreen;">
+        <!-- encabezado -->
+        <tr style="background-color: rgb(61, 29, 174);">
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Cuidad</th>
+            <th>Edad</th>
+            <th>Profesion</th>
+        </tr>
+        <!-- Datos -->
+        <tr>
+            <td>Ivan Camilo Beltran</td>
+            <td>Camilo.beltran@correo.com</td>
+            <td>Bogota</td>
+            <td> 34</td>
+            <td>Ingeniero de sistemas</td>
+        </tr>
+        <tr>
+            <td>Gina Marcela Melendez</td>
+            <td>Gina.melendez@correo.com</td>
+            <td>Medellin</td>
+            <td>29</td>
+            <td>Ingeniera Ambiental</td>
+        </tr>
+        <tr>
+            <td>Maria Stella Velasquez</td>
+            <td>Stella.Velasquez@correo.com</td>
+            <td>Bogota</td>
+            <td>57</td>
+            <td>Coordinadora de ruta</td>
+        </tr>
+        <tr>
+            <td>Julieth Andrea Melendez</td>
+            <td>Julieth.Melendez@correo.com</td>
+            <td>Medellin</td>
+            <td>25</td>
+            <td>Economista</td>
+        </tr>
+        <tr>
+            <td>Ludis Del Carmen Fuentes</td>
+            <td>ludis.fuentes@correo.com</td>
+            <td>Medellin</td>
+            <td>67</td>
+            <td>Enfermera</td>
+        </tr>
+        <tr>
+            <td>Diana Lizeth Beltran</td>
+            <td>Diana.beltran@correo.com</td>
+            <td>Bogota</td>
+            <td>26</td>
+            <td>Veterinaria</td>
+        </tr>
+        <tr>
+            <td>Fabio Beltran</td>
+            <td>Fabio.beltran@correo.com</td>
+            <td>Bogota</td>
+            <td>68</td>
+            <td>Publicista</td>
+        </tr>
+        <tr>
+            <td>Alaia Beltran Melendez</td>
+            <td>Alaia.beltran@correo.com</td>
+            <td>Bogota</td>
+            <td>4</td>
+            <td>Actriz</td>
+        </tr>
+        <tr>
+            <td>Cesar Augusto Andrade</td>
+            <td>Cesar.Andrade@correo.com</td>
+            <td>Medellin</td>
+            <td>68</td>
+            <td>Docente</td>
+        </tr>
+        <tr>
+            <td>Royer chacon</td>
+            <td>Royer.chacon@correo.com</td>
+            <td>Pereira</td>
+            <td>45</td>
+            <td>Ingeniero de sistemas</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- formulario -->
+    <form method="POST">
+        <!-- Campo de Texto -->
+        <label for="">Nombre</label>
+        <input type="text" placeholder="Nombre" name="Nombre" required>
+        <!-- salto de lineas -->
+        <br>
+        <!-- Campo fecha -->
+        <label for="">fecha de nacimiento</label>
+        <input type="date" required max="24/12/2025" min="1990-12-31" value="2025-05-14" name="fecha_nacimiento">
+        <br>
+        <!-- campos numericos -->
+        <label for="">Ingresos Mensuales</label>
+        <input type="number"required placeholder="Ingresos Salario" name="Ingresos_mensuales" required> <br>
+        <!-- Campo Email -->
+        <label for="">Correo Electronico</label>
+        <input type="email"required autofocus placeholder="Ingresar Email" name="Correo"> <br>
+        <!-- Campo Archivo -->
+        <label for="">Subir CV</label>
+        <input type="file" name="subir_cv" required> <br>
+        <!-- campo password -->
+        <label for="">password</label>
+        <input type="password" name="password" required> <br>
+        <!-- campo hora -->
+        <label for="">Hora de Ingreso</label>
+        <input type="time" name="hora_ingreso" required> <br>
+        <!-- Campo Mes -->
+        <label for="">Mes de ingreso a la empresa</label>
+        <input type="month" name="Mes_ingreso" required> <br>
+        <!-- campo color -->
+        <label for="">Escoja Color</label>
+        <input type="color" name="color" required> <br>
+        <!-- Campo Radio -->
+        <label for="">Genero</label>
+        <input type="radio" name="Genero" value="femenino" required>
+        <label for="">femenino</label>
+        <input type="radio" name="Genero" value="masculino" required>
+        <label for="">masculino</label> <br>
+        <!-- Campo Checkbox -->
+        <label for="">Dias Laborados</label>
+        <input type="checkbox" name="Dias" required value="lunes">
+        <label for="">lunes</label>
+        <input type="checkbox" name="Dias" required value="martes">
+        <label for="">martes</label>
+        <input type="checkbox" name="Dias" required value="miercoles">
+        <label for="">miercoles</label>
+        <input type="checkbox" name="Dias" required value="jueves">
+        <label for="">jueves</label>
+        <input type="checkbox" name="Dias" required value="viernes">
+        <label for="">viernes</label> <br>
+        <!-- Campo URL -->
+        <label for="">Link Perfil linkedin</label>
+        <input type="url" name="link_perfil" required> <br>
+        <!-- Campo Telefono -->
+        <label for="">Telefono</label>
+        <input type="tel" name="Telefono" required> <br>
+        <!-- selector -->
+        <label for="">Escoja una Cuidad</label>
+        <select name="" id="">
+            <option value="">-</option>
+            <option value="Bogota">Bogota</option>
+            <option value="Sincelejo">Sincelejo</option>
+            <option value="Manizales">Manizales</option>
+        </select> <br>
+        <!-- fieldset -->
+        <fieldset>
+            <legend>informacion general</legend>
+             <!-- text area -->
+        <label for="">Descripcion del perfil</label>
+        <textarea name="" id=""></textarea> <br>
+        <label for="">Tipo de documento</label>
+        <input type="documento" name="documento">
+        <!-- datalist -->
+        <datalist> <br>
+            <option value="cedula">cedula</option>
+            <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+            <option value="pasaporte">pasaporte</option>
+        </datalist> <br>
+        <label for="">cedula</label>
+        <input type="text">
+        </fieldset>
+        <br>
+        <!-- button -->
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

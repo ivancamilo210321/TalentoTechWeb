@@ -16,7 +16,12 @@
     </div>
     <!-- imagen -->
     <div>
-        <img class="imagen1" src="https://ams3.digitaloceanspaces.com/graffica/2022/12/unnamed-512x375.png" width="350" height="250"/>
+        <img class="imagen1" src="https://ams3.digitaloceanspaces.com/graffica/2022/12/unnamed-512x375.png" width="350" height="250" id="logo"/>
+        <select onchange="CambiarTamanoLogo(value)">
+        <option value="small">Pequeño</option>
+        <option value="medium">Mediano</option>
+        <option value="large">Grande</option>
+        </select>
     </div>
     <div>
         <!-- titulo -->
@@ -173,6 +178,20 @@
 
         if(nombre && cedula && cuidad && telefono && correo && documento && fecha)
         alert("Los datos del formulario son: " + nombre + " " + cedula + " " + cuidad + " " + telefono + " " + correo + " " + documento + " " + documento + " " + fecha  )
+    }
+
+    function CambiarTamanoLogo(tamano){
+        var logo = document.getElementById("logo")
+        var CambiarTamanoLogo = 0
+        if(tamano == "small"){
+            tamanoLogo = 300
+        }else if(tamano == "medium"){
+            tamanoLogo == 600
+        }else if(tamano == "large"){
+            tamanoLogo == 900
+        }
+
+        logo.style.width = tamanoLogo + "px"
     }
  </script>
 <style>

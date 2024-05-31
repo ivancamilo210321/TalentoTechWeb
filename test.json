@@ -1,0 +1,80 @@
+[
+   {
+    "nombre": "Karim",
+    "apellido": "Benzema",
+    "edad": 30,
+    "mascotas": [
+        {
+            "nombre": "saggy",
+            "tipo": "perro"
+        },
+        {
+            "nombre": "micho",
+            "tipo": "gato"
+        }
+        
+    ]
+   },
+   {
+    "nombre": "felipe",
+    "apellido": "sepulveda",
+    "edad": 34,
+    "mascotas": [
+        {
+            "nombre": "rufu",
+            "tipo": "loro"
+        },
+        {
+            "nombre": "gaspar",
+            "topo": "loro"
+        }
+    ]
+   },
+   {
+    "nombre": "diana",
+    "apellido": "beltran",
+    "edad": 32,
+    "mascotas": [
+        {
+            "nombre": "lenon",
+            "tipo": "perro"
+        },
+        {
+            "nombre": "amarie",
+            "tipo": "gato"
+        }
+    ]
+   },
+   {
+    "nombre": "camilo",
+    "apellido": "beltran",
+    "edad": 34,
+    "mascotas": [
+        {
+            "nombre": "axel",
+            "tipo": "perro"
+        },
+        {
+            "nombre": "jeika",
+            "tipo": "hamster"
+        }
+    ]
+   },
+   {
+    "nombre": "gina",
+    "apellido": "melendez",
+    "edad": 29,
+    "mascotas": [
+        {
+            "nombre": "lenon",
+            "tipo": "loro"
+        },
+        {
+            "nombre": "jeiko",
+            "tipo": "perro"
+        }
+    ]
+   }
+   
+
+]
